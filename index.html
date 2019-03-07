@@ -35,6 +35,18 @@
             content_ids: '1234',
             content_type: 'product',
         });
+        fbq('track', 'AddToCart', {
+            value: 10,
+            currency: 'USD',
+            content_ids: '2222',
+            content_type: 'product',
+        });
+        fbq('track', 'Purchase', {
+            value: 13,
+            currency: 'USD',
+            content_ids: '3333',
+            content_type: 'product',
+        });
     </script>
     Hello World
 </body>
