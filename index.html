@@ -20,13 +20,24 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3XTX74"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <input type="text" id="email" value="jiangxg1@gmail.com">
     <a href="#"
     name="color"
-    onclick="dataLayer.push({
-      'cartContent': {'abc': 12,'dd': 23},
-      'ecommerce': 50,
-      'pageCategory': 'Chrimas>dress',
-      'event': 'customizeCar'});">Customize Color</a>
+    onclick="">Customize Color</a>
 </body>
+<script>
+  function setEmail()
+  {
+    var obj = document.getElementById('email');
+    var email = obj.value;
+    console.log(email);
+
+    dataLayer.push({
+      'cartContent': {'abc': 12,'dd': 23},
+      'ecommerce': email,
+      'pageCategory': 'Chrimas>dress',
+      'event': 'customizeCar'});
+  }
+</script>
 
 </html>
